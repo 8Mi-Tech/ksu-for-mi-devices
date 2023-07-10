@@ -9,6 +9,4 @@ jobs:
   build:
     name: Build
     uses: ./.github/workflows/core-build.yml
-    with:
-      branch: ${{ github.ref_name }}
     secrets: inherit
