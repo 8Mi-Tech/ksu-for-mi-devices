@@ -1,7 +1,8 @@
-name: ${{ github.ref_name }}
+name: ${{ inputs.branch }}
 on:
   watch:
     types: [started]
+  workflow_call:
 
 
 jobs:
