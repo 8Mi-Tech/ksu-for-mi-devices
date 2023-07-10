@@ -2,6 +2,7 @@ name: ${{ github.ref_name }}
 on:
   watch:
     types: [started]
+  workflow_call:
 
 
 jobs:
