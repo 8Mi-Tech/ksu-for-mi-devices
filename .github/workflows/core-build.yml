@@ -1,4 +1,4 @@
-name: ${{ github.ref_name }}
+name: Build Core
 on:
   watch:
     types: [started]
