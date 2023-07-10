@@ -9,7 +9,7 @@ jobs:
   build:
     name: ${{ github.ref_name }}
     runs-on: ubuntu-latest
-    #if: github.event.repository.owner.id == github.event.sender.id
+    if: ${{ github.ref_name }} !== main
     env:
       CCACHE_COMPILERCHECK: "%compiler% -dumpmachine; %compiler% -dumpversion"
       CCACHE_NOHASHDIR: "true"
